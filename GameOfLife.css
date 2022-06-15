@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: arcadeClassic;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url("spaceBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+.fontColor {
+  color: #fff;
+}
+
+#canvas {
+  text-align: center;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.btnContainer,
+.rulesInput,
+.rangeSlider {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.rangeSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.form-lable,
+.form-label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-label {
+  margin-bottom: 0;
+}
+
+.btnContainer,
+.rulesInput > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rulesInput > div > input {
+  width: 40px;
+}
+
+.rangeSlider > div {
+  flex-direction: row;
+}
+
+.form-range {
+  width: 200px;
+}
+
+#theme {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(profrolioimage.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #81d8d0;
+  opacity: 0.7;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.mainTitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #81d8d0;
+}
+
+.subTitle {
+  font-size: 20px;
+  transition: 0.3s;
+  color: #000;
+}
+
+.mainTitle,
+.subTitle {
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+.text {
+  color: #000;
+}
+
+.boxContent {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttonBox {
+  margin-top: 5vh;
+}
+
+.buttonBox > button {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.skillTitle {
+  position: relative;
+}
+
+.skillTitle::after {
+  position: absolute;
+  content: " ";
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #81d8d0;
+  width: 30px;
+  height: 2px;
+}
+
+.skills {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  flex: 1 1 30rem;
+  margin-right: 1.5rem;
+}
+
+.skill-item .box {
+  padding: 1rem 0;
+}
+
+.skill-item .box h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  font-size: 1.7rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.skill-item .box .progress-bar {
+  width: 100%;
+  background: #222;
+  overflow: hidden;
+  height: 1rem;
+  border-radius: 50rem;
+}
+
+.skill-item .box .progress-bar span {
+  display: block;
+  height: 100%;
+  background: #81d8d0;
+}
+
+.skill-item.item1 .box:nth-child(1) .progress-bar span {
+  width: 95%;
+}
+.skill-item.item1 .box:nth-child(2) .progress-bar span {
+  width: 90%;
+}
+.skill-item.item1 .box:nth-child(3) .progress-bar span {
+  width: 65%;
+}
+.skill-item.item2 .box:nth-child(1) .progress-bar span {
+  width: 75%;
+}
+.skill-item.item2 .box:nth-child(2) .progress-bar span {
+  width: 75%;
+}
+.skill-item.item2 .box:nth-child(3) .progress-bar span {
+  width: 70%;
+}
